@@ -1,0 +1,19 @@
+Mongodb:- *mongodb is a noSQL database
+*the data stroed in a collection
+*collection don'thave row and columns
+* Data is stored in the form of object.
+
+command:-
+ show dbs:-  check how many database is there
+ use (databse name ):- create new database
+ db.createCollection('collection name'):- create collection
+ show collections:- check how many collection is in database
+ db.(collection name).drop():- to delete collection
+ db.dropDatabase():- to delete current database
+
+db.product.insertOne({'data'}):- for inserting one data
+db.product.find():- to find the data of collection
+
+db.product.updateOne({ model:"a50s"}, {$set:{brand:"nokia"}})
+first coloumn for indetify to row and second for  which you want to updateOne
+db.product.deleteOne({brand:"nokia"}):- to delete one data
